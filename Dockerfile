@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1.4
 
-FROM --platform=linux/amd64,linux/arm64,linux/arm/v7 python:3.7-alpine AS builder
+FROM --platform=linux/amd64 python:3.7-alpine AS builder
 ENV PORT 8080
 EXPOSE 8080
 WORKDIR /app 
